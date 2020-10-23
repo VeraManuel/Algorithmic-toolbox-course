@@ -38,14 +38,17 @@ while True:
 
     result = a[index1] * a[index2]
 
+    sort = sorted(a)
+    result2 = sort[n - 1] * sort[n - 2]
+
 
     if product == result:
         print(n)
         print(a)
-        print(product, result)
+        print('OK', product, result, result2)
     else:
         print(n)
         print(a)
         print(index1, index2)
-        print('error', product, result)
+        print('error', product, result, result2)
         quit()
